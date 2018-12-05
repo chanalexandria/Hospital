@@ -14,9 +14,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by navneet on 23/7/16.
- */
+
 public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
 
     String googlePlacesData;
@@ -62,7 +60,6 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             markerOptions.title(placeName + " : " + vicinity);
             mMap.addMarker(markerOptions);
             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-            //move map camera
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
         }

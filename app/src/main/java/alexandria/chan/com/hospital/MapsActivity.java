@@ -102,24 +102,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
 
-        Button btnRestaurant = (Button) findViewById(R.id.btnRestaurant);
-        btnRestaurant.setOnClickListener(new View.OnClickListener() {
-            String Restaurant = "restaurant";
-            @Override
-            public void onClick(View v) {
-                Log.d("onClick", "Button is Clicked");
-                mMap.clear();
-                String url = getUrl(latitude, longitude, Restaurant);
-                Object[] DataTransfer = new Object[2];
-                DataTransfer[0] = mMap;
-                DataTransfer[1] = url;
-                Log.d("onClick", url);
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-                getNearbyPlacesData.execute(DataTransfer);
-                Toast.makeText(MapsActivity.this,"Nearby Restaurants", Toast.LENGTH_LONG).show();
-            }
-        });
-
         Button btnHospital = (Button) findViewById(R.id.btnHospital);
         btnHospital.setOnClickListener(new View.OnClickListener() {
             String Hospital = "hospital";
@@ -134,28 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Log.d("onClick", url);
                 GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
                 getNearbyPlacesData.execute(DataTransfer);
-                Toast.makeText(MapsActivity.this,"Nearby Hospitals", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        Button btnSchool = (Button) findViewById(R.id.btnSchool);
-        btnSchool.setOnClickListener(new View.OnClickListener() {
-            String School = "school";
-            @Override
-            public void onClick(View v) {
-                Log.d("onClick", "Button is Clicked");
-                mMap.clear();
-                if (mCurrLocationMarker != null) {
-                    mCurrLocationMarker.remove();
-                }
-                String url = getUrl(latitude, longitude, School);
-                Object[] DataTransfer = new Object[2];
-                DataTransfer[0] = mMap;
-                DataTransfer[1] = url;
-                Log.d("onClick", url);
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-                getNearbyPlacesData.execute(DataTransfer);
-                Toast.makeText(MapsActivity.this,"Nearby Schools", Toast.LENGTH_LONG).show();
+                Toast.makeText(MapsActivity.this,"Searching nearby hospitals", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -189,7 +150,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googlePlacesUrl.append("&radius=" + PROXIMITY_RADIUS);
         googlePlacesUrl.append("&type=" + nearbyPlace);
         googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=" + "AIzaSyATuUiZUkEc_UgHuqsBJa1oqaODI-3mLs0");
+        googlePlacesUrl.append("&key=" + "AIzaSyCkpWPl4eo2ggdcqyLMCgBLGQtEMIDWQFw");
         Log.d("getUrl", googlePlacesUrl.toString());
         return (googlePlacesUrl.toString());
     }
@@ -245,22 +206,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
 
-            // Asking user if explanation is needed
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
 
-                // Show an explanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
-
-                //Prompt the user once explanation has been shown
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         MY_PERMISSIONS_REQUEST_LOCATION);
 
 
             } else {
-                // No explanation needed, we can request the permission.
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         MY_PERMISSIONS_REQUEST_LOCATION);
@@ -276,12 +230,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                            String permissions[], int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_LOCATION: {
-                // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted. Do the
-                    // contacts-related task you need to do.
                     if (ContextCompat.checkSelfPermission(this,
                             Manifest.permission.ACCESS_FINE_LOCATION)
                             == PackageManager.PERMISSION_GRANTED) {
@@ -294,14 +245,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 } else {
 
-                    // Permission denied, Disable the functionality that depends on this permission.
                     Toast.makeText(this, "permission denied", Toast.LENGTH_LONG).show();
                 }
                 return;
             }
-
-            // other 'case' lines to check for other permissions this app might request.
-            // You can add here other case statements according to your requirement.
         }
     }
 }
