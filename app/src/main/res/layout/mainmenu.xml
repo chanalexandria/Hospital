@@ -26,9 +26,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="190dp"
         android:background="#7ac46e"
-        android:fontFamily="@font/lato_black"
         android:text="Map"
         android:onClick="goToMaps"
+        android:fontFamily="@font/lato_black"
         android:textColor="@android:color/background_light" />
 
     <ImageView
