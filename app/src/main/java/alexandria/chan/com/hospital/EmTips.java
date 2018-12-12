@@ -15,7 +15,7 @@ public class EmTips extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tips);
 
-        int images[] = {R.drawable.bandage, R.drawable.burn, R.drawable.choking, R.drawable.footcare, R.drawable.stroke2, R.drawable.stroke2};
+        int images[] = {R.drawable.bandage, R.drawable.burns, R.drawable.choking, R.drawable.footcare, R.drawable.stroke, R.drawable.strokee, R.drawable.cpu};
 
         v_flipper = findViewById(R.id.v_flipper);
 
