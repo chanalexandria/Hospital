@@ -25,4 +25,9 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent (this, EmTips.class);
         startActivity(intent);
     }
+
+    public void goToNum (View view){
+        Intent intent = new Intent (this, EmNum.class);
+        startActivity(intent);
+    }
 }

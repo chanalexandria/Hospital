@@ -6,38 +6,51 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnTips"
-        android:layout_width="172dp"
+        android:id="@+id/btnNum"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="113dp"
+        android:layout_marginBottom="65dp"
         android:background="#7ac46e"
         android:fontFamily="@font/lato_black"
-        android:text="Emergency Tips"
+        android:onClick="goToNum"
+        android:text="Emergency Numbers"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnTips2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:background="#7ac46e"
+        android:fontFamily="@font/lato_black"
         android:onClick="goToTips"
+        android:text="Emergency Tips"
         android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/btnMap"
-        android:layout_width="172dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="193dp"
         android:background="#7ac46e"
-        android:text="Map"
-        android:onClick="goToMaps"
         android:fontFamily="@font/lato_black"
+        android:onClick="goToMaps"
+        android:text="Map"
         android:textColor="@android:color/background_light" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="103dp"
+        android:layout_above="@+id/textView"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="57dp"
+        android:layout_marginBottom="-156dp"
         app:srcCompat="@drawable/welcome" />
 
     <TextView
@@ -46,7 +59,7 @@
         android:layout_height="37dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="169dp"
+        android:layout_marginTop="156dp"
         android:fontFamily="@font/lato"
         android:text="What can we do for you today?"
         android:textAlignment="center"
