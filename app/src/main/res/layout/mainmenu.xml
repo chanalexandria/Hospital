@@ -5,64 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnNum"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp"
-        android:background="#7ac46e"
-        android:fontFamily="@font/lato_black"
-        android:onClick="goToNum"
-        android:text="Emergency Numbers"
-        android:textColor="@android:color/background_light" />
-
-    <Button
-        android:id="@+id/btnTips2"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
-        android:background="#7ac46e"
-        android:fontFamily="@font/lato_black"
-        android:onClick="goToTips"
-        android:text="Emergency Tips"
-        android:textColor="@android:color/background_light" />
-
-    <Button
-        android:id="@+id/btnMap"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="193dp"
-        android:background="#7ac46e"
-        android:fontFamily="@font/lato_black"
-        android:onClick="goToMaps"
-        android:text="Map"
-        android:textColor="@android:color/background_light" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="103dp"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="-156dp"
-        app:srcCompat="@drawable/welcome" />
+        android:layout_width="230dp"
+        android:layout_height="236dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/welcomee" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="37dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="156dp"
+        android:text="Search hospitals around NCR area"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/emtips"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_flipper"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/lato"
-        android:text="What can we do for you today?"
-        android:textAlignment="center"
-        android:textColor="#7ac46e"
-        android:textSize="18sp" />
+        android:onClick="goToTips"
+        android:text="HOW TO HANDLE EMERGENCY SITUATIONS"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="326dp"
+        android:layout_height="159dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emtips"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToList"
+        app:srcCompat="@drawable/search" />
+
 </RelativeLayout>

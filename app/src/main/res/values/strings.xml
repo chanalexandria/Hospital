@@ -1,4 +1,60 @@
 <resources>
     <string name="app_name">Hospital</string>
     <string name="title_activity_maps">Map</string>
+    <string-array name="array_Caloocan">
+        <item>Our Lady of Grace Hospital</item>
+        <item>Caloocan City Medical Center</item>
+        <item>Martinez Memorial Hospital</item>
+        <item>Manila Central University Hospital</item>
+        <item>Lady of Lourdes Hospital</item>
+        <item>MCU-FDT Medical Foundation</item>
+        <item>Acebedo General Hospital</item>
+        <item>San Lorenzo Hospital</item>
+        <item>John Paul Hospital</item>
+        <item>North Caloocan Doctors Hospital</item>
+        <item>Caloocan City North Medical Center</item>
+        <item>Ospital ng Caloocan</item>
+        <item>Nodado General Hospital</item>
+        <item>Franco Clinic and Hospital</item>
+        <item>Dr. Jose Natalio Rodriguez Memorial Medical Center</item>
+        <item>Kaybiga Community Hospital</item>
+    </string-array>
+    <string-array name="array_LasPinas">
+        <item>Perpetual Help Medical Center</item>
+        <item>Las Piñas Doctors Hospital</item>
+        <item>A. Zarate General Hospital</item>
+        <item>Las Piñas City Medical Center</item>
+        <item>Christ the King General Hospital</item>
+        <item>E. Zarate Medical Center</item>
+        <item>Alabang Medical Clinic</item>
+        <item>Las Piñas District Hospital</item>
+        <item>Cabinte Maternity and Children's Hospital</item>
+        <item>Pope John Paul 2 Hospital and Medical Center</item>
+    </string-array>
+    <string-array name="array_Manila">
+        <item>Ospital ng Sampaloc</item>
+        <item>Perpetual Succor Hospital</item>
+        <item>Mary Chiles General Hospital</item>
+        <item>University of Santo Tomas Hospital</item>
+        <item>Hospital of the Infant Jesus</item>
+        <item>St. Jude Hospital and Medical Center</item>
+        <item>Dr. Jose Fabella Memorial Hospital</item>
+        <item>Jose R. Reyes Memorial Medical Center</item>
+        <item>San Lazaro Hospital</item>
+        <item>Metropolitan Medical Center</item>
+        <item>Chinese General Hospital</item>
+        <item>Our Lady of Lourdes Hospital</item>
+        <item>ManilaMed Medical Center</item>
+        <item>Manila Doctors Hospital</item>
+        <item>Sta. Ana Hospital</item>
+        <item>Philippine General Hospital</item>
+        <item>Mary Johnson Hospital</item>
+    </string-array>
+    <string-array name="array_Navotas">
+        <item>Navotas City</item>
+        <item>Martinex Memorial Hospital</item>
+        <item>Tondo Medical Center</item>
+    </string-array>
+
+
 </resources>

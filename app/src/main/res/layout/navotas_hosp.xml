@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:fontFamily="@font/lato"
+        android:text="Navotas City Hospital"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/img_navotas"
+        android:layout_width="334dp"
+        android:layout_height="228dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/navotashosp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/lato"
+        android:text="Contact No.: (02) 351 8021"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/link"
+        android:layout_marginBottom="82dp"
+        android:text="Opening Hours: 7:00 AM - 10:00 PM"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link"
+        android:layout_alignStart="@+id/textView3"
+        android:text="More Information:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:autoLink="all"
+        android:clickable="true
+"
+        android:text="https://www.practo.com/navotas/hospital/navotas-city-hospital-navotas-city"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="286dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/navotassearch" />
+</RelativeLayout>

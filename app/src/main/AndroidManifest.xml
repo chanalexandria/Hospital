@@ -33,9 +33,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MapsActivity" />
         <activity android:name=".MainMenu" />
         <activity android:name=".EmTips" />
+        <activity android:name=".SearchList" />
+        <activity android:name=".Caloocan" />
+        <activity android:name=".LasPinas" />
+        <activity android:name=".Makati" />
+        <activity android:name=".Malabon" />
+        <activity android:name=".Manila" />
+        <activity android:name=".Marikina" />
+        <activity android:name=".Mandaluyong" />
+        <activity android:name=".Muntinlupa" />
+        <activity android:name=".Navotas" />
+        <activity android:name=".Paranaque" />
+        <activity android:name=".Pasay" />
+        <activity android:name=".Pasig" />
+        <activity android:name=".Pateros" />
+        <activity android:name=".QuezonCity" />
+        <activity android:name=".SanJuan" />
+        <activity android:name=".Taguig" />
+        <activity android:name=".Valenzuela" />
+        <activity android:name=".Caloocan_hosp" />
+        <activity android:name=".LasPinas_hosp" />
+        <activity android:name=".Manila_hosp" />
+        <activity android:name=".Navotas_hosp" />
+
+
+
     </application>
 
 </manifest>
