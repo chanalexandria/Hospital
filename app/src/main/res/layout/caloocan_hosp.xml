@@ -9,66 +9,60 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnCaloocan"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_marginBottom="-95dp"
         android:fontFamily="@font/lato"
         android:text="Our Lady of Grace Hospital"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
-
-    <ImageButton
-        android:id="@+id/img_caloocan"
-        android:layout_width="355dp"
-        android:layout_height="257dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="106dp"
-        app:srcCompat="@drawable/caloocanhosp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_marginBottom="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="115dp"
+        android:layout_marginStart="29dp"
         android:fontFamily="@font/lato"
         android:text="Contact No.: (02) 361 1124"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/link"
-        android:layout_marginBottom="82dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="-114dp"
         android:text="Opening Hours: Open 24 hours"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/link"
         android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView4"
         android:text="More Information:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/link"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView6"
         android:autoLink="all"
-        android:clickable="true
-"
+        android:clickable="true"
         android:text="https://www.practo.com/caloocan/hospital/our-lady-of-grace-hospital-caloocan-caloocan-city"
         android:textColor="@android:color/black"
-        android:textColorLink="@android:color/holo_blue_dark" />
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -76,7 +70,17 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="13dp"
         app:srcCompat="@drawable/caloocansearch" />
+
+    <Button
+        android:id="@+id/btnCaloocan"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/caloocanhosp"
+        android:onClick="processCaloocan" />
 
 </RelativeLayout>

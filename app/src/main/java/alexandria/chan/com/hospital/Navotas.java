@@ -24,7 +24,7 @@ public class Navotas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.caloocan);
+        setContentView(R.layout.navotas);
         ListView lv = (ListView) findViewById(R.id.listViewNavotas);
         ArrayList<String> arrayNavotas = new ArrayList<>();
         arrayNavotas.addAll(Arrays.asList(getResources().getStringArray(R.array.array_Navotas)));

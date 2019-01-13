@@ -17,59 +17,52 @@
         android:fontFamily="@font/lato"
         android:textSize="24sp" />
 
-    <ImageButton
-        android:id="@+id/img_laspinas"
-        android:layout_width="347dp"
-        android:layout_height="243dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        app:srcCompat="@drawable/laspinashosp" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_marginBottom="110dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignStart="@+id/btnLasPinas"
         android:fontFamily="@font/lato"
         android:text="Contact No.: (02) 874 8515"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/link"
-        android:layout_marginBottom="82dp"
+        android:layout_above="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
         android:text="Opening Hours: 9am-8:30pm"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginBottom="48dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="47dp"
         android:text="More Information:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/link"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="-47dp"
         android:autoLink="all"
         android:clickable="true
 "
         android:text="http://phmc.com.ph/"
         android:textColor="@android:color/black"
-        android:textColorLink="@android:color/holo_blue_dark" />
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -79,4 +72,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         app:srcCompat="@drawable/laspinassearch" />
+
+    <Button
+        android:id="@+id/btnLasPinas"
+        android:layout_width="346dp"
+        android:layout_height="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:onClick="processLasPinas"
+        android:background="@drawable/laspinashosp" />
 </RelativeLayout>

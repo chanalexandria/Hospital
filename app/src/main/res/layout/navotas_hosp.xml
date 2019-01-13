@@ -17,15 +17,6 @@
         android:textColor="@android:color/black"
         android:textSize="24sp" />
 
-    <ImageButton
-        android:id="@+id/img_navotas"
-        android:layout_width="334dp"
-        android:layout_height="228dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        app:srcCompat="@drawable/navotashosp" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -35,7 +26,8 @@
         android:layout_marginBottom="110dp"
         android:fontFamily="@font/lato"
         android:text="Contact No.: (02) 351 8021"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -45,30 +37,33 @@
         android:layout_alignStart="@+id/link"
         android:layout_marginBottom="82dp"
         android:text="Opening Hours: 7:00 AM - 10:00 PM"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/link"
         android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="-82dp"
         android:text="More Information:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/link"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
         android:autoLink="all"
         android:clickable="true
 "
         android:text="https://www.practo.com/navotas/hospital/navotas-city-hospital-navotas-city"
         android:textColor="@android:color/black"
-        android:textColorLink="@android:color/holo_blue_dark" />
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -78,4 +73,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
         app:srcCompat="@drawable/navotassearch" />
+
+    <Button
+        android:id="@+id/btnNavotas"
+        android:layout_width="346dp"
+        android:layout_height="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:onClick="processNavotas"
+        android:background="@drawable/navotashosp" />
 </RelativeLayout>
